@@ -37,6 +37,7 @@ class MovieAdapter(val MPosition:(String)->Unit):ListAdapter<Movie,MovieAdapter.
                 placeholder(R.drawable.placeholder)
                 error(R.drawable.placeholder)
             }
+            tvTitle.text = movie.original_title
             movieImg.setOnClickListener {
                 MPosition.invoke(movie.id.toString())
             }

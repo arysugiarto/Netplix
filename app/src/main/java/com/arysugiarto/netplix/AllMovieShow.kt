@@ -35,12 +35,7 @@ class AllMovieShow : Fragment() {
             findNavController().navigate(action)
         }
     }
-    private val movAdapter3 by lazy {
-        MovieAdapter { movie ->
-            val action = AllMovieShowDirections.actionAllMovieShowToMovieDetailShow(movie)
-            findNavController().navigate(action)
-        }
-    }
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
